@@ -1,5 +1,11 @@
-1. ERRO AO SALVAR NOVO POST 
-2. TITULO DO POST SALVANDO VAZIO.
-3. AO EXCLUIR ESTA INDO PARA UMA TELA EM BRANCO
-4. EXIBIR OS COMENTARIOS
-5. REMOVER OS POSTS QUE NÃO ESTÃO PUBLICADOS
+# Dig's Blog
+
+### Configurações:
+- Dynamic Web Project 5.0;
+- Java 17;
+- Apache TomCat 9.0;
+
+### Funcionalidades:
+- Criação de postagens;
+- Permite editar ou excluir postagens criadas;
+- Visualização das postagens, e comentarios, caso tenha;

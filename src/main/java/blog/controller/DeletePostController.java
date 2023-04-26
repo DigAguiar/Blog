@@ -21,10 +21,8 @@ public class DeletePostController extends HttpServlet {
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		String id = req.getParameter("id");
 
-
 		try {
 			dados.removePost(Long.parseLong(id));
-			//FIX: 3. AO EXCLUIR ESTA INDO PARA UMA TELA EM BRANCO? (RESOLVIDO)
 			doPost(req, resp);
 		} catch (NumberFormatException | PostNotFoundException e) {
 			resp.sendError(400, e.getMessage());

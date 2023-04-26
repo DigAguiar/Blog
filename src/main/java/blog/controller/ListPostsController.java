@@ -25,9 +25,7 @@ public class ListPostsController extends HttpServlet {
 		
 		List<Post> posts = dados.getPosts();
 		List<Post> publish = new ArrayList<Post>();
-		
-		
-		//FIX 5. REMOVER OS POSTS QUE NÃO ESTÃO PUBLICADOS
+
 		for (Post post : posts) {
 			if(post.getPublish() == true) {
 				publish.add(post);

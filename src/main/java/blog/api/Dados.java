@@ -1,6 +1,5 @@
 package blog.api;
 
-import java.lang.reflect.InvocationTargetException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
@@ -11,15 +10,6 @@ import blog.erros.PostNotFoundException;
 import blog.model.Comment;
 import blog.model.Post;
 
-/**
- * 
- * Não há a nececidade de alterar essa classe.
- * 
- * Classe de apoio para manter os dados em memoria.
- * 
- * @author mariojp
- *
- */
 public class Dados {
 
 	private static List<Post> posts = new ArrayList<Post>();
@@ -34,11 +24,7 @@ public class Dados {
 		return posts;
 	}
 
-	/**
-	 * 
-	 * @param post
-	 * @throws PostNotFoundException
-	 */
+	
 	public void updatePost(Post post) throws PostNotFoundException {
 		if (post.getId() == null) {
 			post.setId(indexPost.incrementAndGet());
@@ -51,10 +37,7 @@ public class Dados {
 		}
 	}
 
-	/**
-	 * 
-	 * @param post
-	 */
+	
 	public void savePost(Post post) {
 		post.setId(indexPost.incrementAndGet());
 		posts.add(post);

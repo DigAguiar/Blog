@@ -1,7 +1,6 @@
 package blog.controller;
 
 import java.io.IOException;
-import java.lang.reflect.InvocationTargetException;
 
 import blog.api.Dados;
 import blog.erros.PostNotFoundException;

@@ -4,7 +4,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>UCSal Blog</title>
+<title>Dig's Blog</title>
 <link
 	href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
 	rel="stylesheet"
@@ -13,7 +13,7 @@
 <link rel="stylesheet"
 	href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
 <style type="text/css">
-/* Show it is fixed to the top */
+
 body {
 	min-height: 75rem;
 	padding-top: 4.5rem;
@@ -26,7 +26,7 @@ body {
 
 	<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
 		<div class="container-fluid">
-			<a class="navbar-brand" href="#">UCSal Blog</a>
+			<a class="navbar-brand" href="#">Dig's Blog</a>
 			<button class="navbar-toggler" type="button"
 				data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
 				aria-controls="navbarCollapse" aria-expanded="false"
@@ -63,7 +63,7 @@ body {
 							<c:forEach var="comment" items="${item.comments}">
 								<p>${comment.text}</p>
 							</c:forEach>
-							<!-- FIX: 4. EXIBIR OS COMENTARIOS (RESOLVIDO) -->
+							
 
 						</div>
 					</div>

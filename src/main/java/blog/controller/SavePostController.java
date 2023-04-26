@@ -2,10 +2,7 @@ package blog.controller;
 
 import java.io.IOException;
 
-import org.apache.catalina.connector.Response;
-
 import blog.api.Dados;
-import blog.erros.PostNotFoundException;
 import blog.model.Post;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
@@ -22,8 +19,6 @@ public class SavePostController extends HttpServlet {
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
-		//FIX: 2. TITULO DO POST SALVANDO VAZIO (RESOLVIDO).
-		
 		String title = req.getParameter("title");
 		String text = req.getParameter("text");
 		String publish = req.getParameter("publish");
